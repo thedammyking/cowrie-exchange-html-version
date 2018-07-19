@@ -1,0 +1,49 @@
+.section-cta {
+  padding-top: 8rem;
+  color: #f1f1f1;
+
+  .row {
+    @include respond(phone) {
+      flex-wrap: wrap;
+    }
+  }
+}
+.section-spot-light {
+  height: 35.6rem;
+  margin-top: 8rem;
+
+  @include respond(phone) {
+    height: auto;
+  }
+
+  .row {
+    background-color: #6825ff;
+
+    [class^="col-"]:not(:last-child) {
+      @include respond(phone) {
+        margin-right: 0;
+      }
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    .col-1-of-3 {
+      @include respond(phone) {
+        width: auto;
+      }
+    }
+  }
+}
+
+.section-partners {
+  margin-top: 8rem;
+  width: 100%;
+  background-color: #e4e4e4;
+  text-align: center;
+
+  .row {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "Cowrie Exchange",
+  "name": "The Fastest Way to trade Cryptocurrency with Naira at the best rate",
+  "icons": [
+    {
+      "src": "assets/img/favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#8E00FF",
+  "background_color": "#000000"
+}

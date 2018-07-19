@@ -1,0 +1,75 @@
+.conversion-rate {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #f1f1f1;
+  margin-top: 3rem;
+  height: 4.7rem;
+
+  @include respond(phone) {
+    height: 13rem;
+  }
+
+  &__list {
+    list-style: none;
+    color: #6825ff;
+    font-size: 1.4rem;
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &--white {
+      color: #f1f1f1;
+      font-size: 1.2rem;
+      //width: 40%;
+      margin: 0;
+
+      @include respond(phone) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__list--white &__item {
+    &:not(:last-child) {
+      @include respond(phone) {
+        border: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__item {
+    padding: 0 4rem;
+
+    &:not(:last-child) {
+      border-right: 1px solid #6825ff;
+
+      @include respond(phone) {
+        border: 0;
+        margin-bottom: 1rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__list--white &__item {
+    padding: 0 2rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid #f1f1f1;
+    }
+  }
+}

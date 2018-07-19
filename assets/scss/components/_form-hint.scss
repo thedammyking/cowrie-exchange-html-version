@@ -1,0 +1,17 @@
+.form-hint {
+  width: 40%;
+  padding: 3rem;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  font-size: 1.4rem;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 2.7rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.bank-details {
+  font-size: 1.5rem;
+  &__heading {
+    color: #6825ff;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    color: #7e7e91;
+
+    &--big {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #f1f1f1;
+    }
+  }
+}

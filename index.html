@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <title>Cowrie Exchange</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="header__logo-box">
+                    <img src="assets/img/cowrie-exchange-logo.png" alt="Cowrie Exchange NGNT Logo" class="header__logo">
+                </div>
+            </div>
+            <div class="col-2-of-3">
+                <nav class="header__nav">
+                    <ul class="header__nav-list" role="navigation">
+                        <li class="header__nav-item">
+                            <a class="active" aria-current="true" href="/">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a aria-current="false" href="#">About</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a aria-current="false" target="_blank" href="https://medium.com/cowrie-exchange">Blog</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a aria-current="false" href="#">FAQ</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a aria-current="false" href="#">Login</a>
+                        </li>
+                        <li class="header__nav-item btn">
+                            <a href="#">Signup</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main style="display:block" id="landingPage">
+        <section class="section-cta">
+            <div class="row">
+                <h1 class="cta__text">The Fastest Way to trade Cryptocurrency with Naira at the
+                    <span class="cta__text-bold">best rate</span>
+                </h1>
+            </div>
+            <div class="row">
+                <div onClick="javascript:void(0)" id="ctn_cta" class="cta__btn">
+                    <p class="cta__btn-text"> I want to convert</p>
+                    <p>
+                        <span class="cta__btn-text--pupple">Crypto</span> to
+                        <span class="cta__btn-text--pupple">NGN</span>
+                    </p>
+                </div>
+                <div onClick="javascript:void(0)" id="ntc_cta" class="cta__btn">
+                    <p class="cta__btn-text"> I want to convert</p>
+                    <p>
+                        <span class="cta__btn-text--pupple">NGN</span> to
+                        <span class="cta__btn-text--pupple">Crypto</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section-spot-light">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="spot-light__card">
+                        <img class="spot-light__card-img" src="assets/img/icon1.png" alt="Cowrie Exchange Icon">
+                        <p class="spot-light__card-text">Cowrie Exchange is brought to you by Cowrie Integrated Systems. We are a team made up of financial
+                            and technology professionals with a strong tack record in the fintech and crypto space.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="spot-light__card">
+                        <img class="spot-light__card-img" src="assets/img/icon2.png" alt="Cowrie Exchange Icon">
+                        <p class="spot-light__card-text">At Cowry exchange, we offer the fairest and lowest fees for cryptocurrency transactions. You can
+                            also by cryptocurrency directly from your bank account thereby eliminating all forms of bank
+                            card charges.</p>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="spot-light__card">
+                        <img class="spot-light__card-img" src="assets/img/icon3.png" alt="Cowrie Exchange Icon">
+                        <p class="spot-light__card-text">Transactions occur extremely fast and you can be sure to get value within 5 max minutes of initiating
+                            your transaction. All our payments are automated and there are absolutely no wait times.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-partners">
+            <div class="row">
+                <h2 class="partners__heading">Our Partners</h2>
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <img src="assets/img/interstellar.png" alt="Interstellar">
+                    </li>
+                    <li class="partners__item">
+                        <img src="assets/img/stellar.png" alt="Stellar">
+                    </li>
+                    <li class="partners__item">
+                        <img src="assets/img/saza.png" alt="Saza">
+                    </li>
+                    <li class="partners__item">
+                        <img src="assets/img/fets.png" alt="FETS">
+                    </li>
+                    <li class="partners__item">
+                        <img src="assets/img/page.png" alt="Page Microfinance Bank">
+                    </li>
+                    <li class="partners__item">
+                        <img src="assets/img/citiserve.png" alt="Citiserve">
+                    </li>
+                    <li class="partners__item">
+                        <img src="assets/img/mtn.png" alt="MTN">
+                    </li>
+                    <li class="partners__item">
+                        <img src="assets/img/airtel.png" alt="Airtel">
+                    </li>
+                    <li class="partners__item">
+                        <img src="assets/img/glo.png" alt="Glo">
+                    </li>
+                    <li class="partners__item">
+                        <img src="assets/img/9mobile.png" alt="9 Mobile">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <main style="display:none" id="converter">
+        <section class="section-converter">
+            <div style="display:none" class="ctn">
+                <div style="display:none" class="slide slide--1">
+                    <div class="row">
+                        <div class="slide-nav">
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/amount-icon-blue.png" alt="Amounts icon">
+                                <p class="slide-nav__icon-text">Amounts</p>
+                            </div>
+                            <div class="slide-nav__icon-box">
+                                <img class="slide-nav__icon" src="assets/img/bank-icon-white.png" alt="Bank Details icon">
+                                <p class="slide-nav__icon-text">Bank Details</p>
+                            </div>
+                            <div class="slide-nav__icon-box">
+                                <img class="slide-nav__icon" src="assets/img/exchange-icon-white.png" alt="Exchange icon">
+                                <p class="slide-nav__icon-text">Exchange</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="BackBtn">
+                            <a onClick="javascript:void(0)" class="BackBtn__text back_btn--1" href="#">
+                                <i class="ion-chevron-left BackBtn__icon"></i> Back</a>
+                        </div>
+                    </div>
+                    <div class="enter-left">
+                        <div class="row">
+                            <h4 class="slide__text">Enter the amount you will like to sell to see how much you will receive</h4>
+                        </div>
+                        <div class="row">
+                            <form action="#">
+                                <div class="slide__form-group slide__form-group--1">
+                                    <div class="input-dropdown">
+                                        <label for="You have" class="input-dropdown__label">You have</label>
+                                        <div class="input-dropdown__box">
+                                            <div class="input-dropdown__dropdown">XLM
+                                                <i class="ion-chevron-down input-dropdown__icon"></i>
+                                            </div>
+                                            <input dir="rtl" id="You have" class="form-input input-dropdown__input" type="text" autocomplete="off" placeholder="Enter Amount"
+                                                value="">
+                                        </div>
+                                    </div>
+                                    <div class="input-dropdown">
+                                        <label for="You receive" class="input-dropdown__label">You receive</label>
+                                        <div class="input-dropdown__box">
+                                            <div class="input-dropdown__dropdown">NGN
+                                                <i class="ion-chevron-down input-dropdown__icon"></i>
+                                            </div>
+                                            <input dir="rtl" id="You receive" class="form-input input-dropdown__input" type="text" autocomplete="off" placeholder="Enter Amount"
+                                                value="">
+                                        </div>
+                                    </div>
+                                    <button onClick="javascript:void(0)" class="btn next-button next--1">Next</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="conversion-rate">
+                                <ul class="conversion-rate__list">
+                                    <li class="conversion-rate__item">Rate: 1 XLM = 123 NGN</li>
+                                    <li class="conversion-rate__item">Transfer Fee: NGN 1,000</li>
+                                    <li class="conversion-rate__item">Total spend: XLM 100</li>
+                                    <li class="conversion-rate__item">Total receive: NGN 12,300</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="display:none" class="slide slide--2">
+                    <div class="row">
+                        <div class="slide-nav">
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/amount-icon-blue.png" alt="Amounts icon">
+                                <p class="slide-nav__icon-text">Amounts</p>
+                            </div>
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/bank-icon-blue.png" alt="Bank Details icon">
+                                <p class="slide-nav__icon-text">Bank Details</p>
+                            </div>
+                            <div class="slide-nav__icon-box">
+                                <img class="slide-nav__icon" src="assets/img/exchange-icon-white.png" alt="Exchange icon">
+                                <p class="slide-nav__icon-text">Exchange</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="BackBtn">
+                            <a onClick="javascript:void(0)" class="BackBtn__text back_btn--2" href="#">
+                                <i class="ion-chevron-left BackBtn__icon"></i> Back</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="slide__form-group slide__form-group--2">
+                            <div class="dropdown">
+                                <div class="dropdown__select">
+                                    <p id="dropdown">Please select your bank</p>
+                                    <i class="ion-chevron-down dropdown__icon"></i>
+                                </div>
+                                <div class="dropdown__option-list">
+                                    <p onclick="selectOption(1)" class="dropdown__option-item--1 dropdown__option-item">Access Bank</p>
+                                    <p onclick="selectOption(2)" class="dropdown__option-item--2 dropdown__option-item">Diamond Bank</p>
+                                    <p onclick="selectOption(3)" class="dropdown__option-item--3 dropdown__option-item">Fidelity Bank</p>
+                                    <p onclick="selectOption(4)" class="dropdown__option-item--4 dropdown__option-item">GTBank</p>
+                                    <p onclick="selectOption(5)" class="dropdown__option-item--5 dropdown__option-item">UBA</p>
+                                    <p onclick="selectOption(6)" class="dropdown__option-item--6 dropdown__option-item">Zenith Bank</p>
+                                </div>
+                            </div>
+                            <div class="input-cta">
+                                <div class="input-cta__box">
+                                    <input type="text" placeholder="Enter your account number" class="form-input input-cta__input" autocomplete="off" value="">
+                                    <div class="input-cta__btn">Lookup</div>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Account information" class="input form-input" autocomplete="off" value="">
+                        </div>
+                        <div class="form-hint">
+                            <p class="form-hint__text">From the list, select your bank where you want your funds remitted into</p>
+                            <p class="form-hint__text">Enter your account number and click Lookup to verify the account name and generate a memo</p>
+                            <p class="form-hint__text">Click Next to sell your XLM</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button onClick="javascript:void(0)" class="btn next-button next--2">Next</button>
+                    </div>
+                </div>
+                <div style="display:none" class="slide slide--3">
+                    <div class="row">
+                        <div class="slide-nav">
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/amount-icon-blue.png" alt="Amounts icon">
+                                <p class="slide-nav__icon-text">Amounts</p>
+                            </div>
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/bank-icon-blue.png" alt="Bank Details icon">
+                                <p class="slide-nav__icon-text">Bank Details</p>
+                            </div>
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/exchange-icon-blue.png" alt="Exchange icon">
+                                <p class="slide-nav__icon-text">Exchange</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="BackBtn">
+                            <a onClick="javascript:void(0)" class="BackBtn__text back_btn--3" href="#">
+                                <i class="ion-chevron-left BackBtn__icon"></i> Back</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h4 class="slide__text">Check that all details are correct before processing</h4>
+                    </div>
+                    <div class="row">
+                        <div class="trans-details__text">
+                            <p>You are spending:</p>
+                        </div>
+                        <div class="trans-details__text--big">
+                            <p>12,300 NGN</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="trans-details__text">
+                            <p>You will receive:</p>
+                        </div>
+                        <div class="trans-details__text--big">
+                            <p>100 XLM</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="conversion-rate__list conversion-rate__list--white">
+                            <li class="conversion-rate__item">Rate: 1 XLM = 123 NGN</li>
+                            <li class="conversion-rate__item">Transfer Fee: NGN 1,000</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="slide__form-group slide__form-group--3">
+                            <div class="input-cta">
+                                <label for="Memo" class="input-cta__label">Memo</label>
+                                <div class="input-cta__box">
+                                    <input type="text" class="input-cta__input" autocomplete="off" disabled="" value="0000001349545683432">
+                                    <div class="input-cta__btn">Copy</div>
+                                </div>
+                            </div>
+                            <div class="input-cta">
+                                <label for="Our XLM Address" class="input-cta__label">Our XLM Address</label>
+                                <div class="input-cta__box">
+                                    <input type="text" class="input-cta__input" autocomplete="off" disabled="" value="0x234fsdjkb89745n24878932ndfu2939hfwe7344443q4jb">
+                                    <div class="input-cta__btn">Copy</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-hint">
+                            <p class="form-hint__text">Copy the memo (16-digit) and our XLM address</p>
+                            <p class="form-hint__text">For your XLM wallet, make payment using 16-digit memo and our XLM address as the destination</p>
+                            <p class="form-hint__text">Your bank account will be credited with the equivalent NGN within few minutes (E.T.A 2 minutes)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display:none" class="ntc">
+                <div style="display:none" class="slide slide--1">
+                    <div class="row">
+                        <div class="slide-nav">
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/amount-icon-blue.png" alt="Amounts icon">
+                                <p class="slide-nav__icon-text">Amounts</p>
+                            </div>
+                            <div class="slide-nav__icon-box">
+                                <img class="slide-nav__icon" src="assets/img/wallet-icon-white.png" alt="Wallet Details icon">
+                                <p class="slide-nav__icon-text">Wallet Details</p>
+                            </div>
+                            <div class="slide-nav__icon-box">
+                                <img class="slide-nav__icon" src="assets/img/exchange-icon-white.png" alt="Exchange icon">
+                                <p class="slide-nav__icon-text">Exchange</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" enter-right">
+                        <div class="row">
+                            <div class="BackBtn">
+                                <a onClick="javascript:void(0)" class="BackBtn__text back_btn--1" href="#">
+                                    <i class="ion-chevron-left BackBtn__icon"></i> Back</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4 class="slide__text">Enter the amount you will like to sell to see how much you will receive</h4>
+                        </div>
+                        <div class="row">
+                            <form action="#">
+                                <div class="slide__form-group slide__form-group--1">
+                                    <div class="input-dropdown">
+                                        <label for="You have" class="input-dropdown__label">You have</label>
+                                        <div class="input-dropdown__box">
+                                            <div class="input-dropdown__dropdown">NGN
+                                                <i class="ion-chevron-down input-dropdown__icon"></i>
+                                            </div>
+                                            <input dir="rtl" id="You have" class="form-input input-dropdown__input" type="text" autocomplete="off" placeholder="Enter Amount"
+                                                value="">
+                                        </div>
+                                    </div>
+                                    <div class="input-dropdown">
+                                        <label for="You receive" class="input-dropdown__label">You receive</label>
+                                        <div class="input-dropdown__box">
+                                            <div class="input-dropdown__dropdown">XLM
+                                                <i class="ion-chevron-down input-dropdown__icon"></i>
+                                            </div>
+                                            <input dir="rtl" id="You receive" class="form-input input-dropdown__input" type="text" autocomplete="off" placeholder="Enter Amount"
+                                                value="">
+                                        </div>
+                                    </div>
+                                    <button onClick="javascript:void(0)" class="btn next-button next--1">Next</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="conversion-rate">
+                                <ul class="conversion-rate__list">
+                                    <li class="conversion-rate__item">Rate: 1 XLM = 123 NGN</li>
+                                    <li class="conversion-rate__item">Transfer Fee: NGN 1,000</li>
+                                    <li class="conversion-rate__item">Total spend: XLM 100</li>
+                                    <li class="conversion-rate__item">Total receive: NGN 12,300</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="display:none" class="slide slide--2">
+                    <div class="row">
+                        <div class="slide-nav">
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/amount-icon-blue.png" alt="Amounts icon">
+                                <p class="slide-nav__icon-text">Amounts</p>
+                            </div>
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/wallet-icon-blue.png" alt="Wallet Details icon">
+                                <p class="slide-nav__icon-text">Wallet Details</p>
+                            </div>
+                            <div class="slide-nav__icon-box">
+                                <img class="slide-nav__icon" src="assets/img/exchange-icon-white.png" alt="Exchange icon">
+                                <p class="slide-nav__icon-text">Exchange</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="BackBtn">
+                            <a onClick="javascript:void(0)" class="BackBtn__text back_btn--2" href="#">
+                                <i class="ion-chevron-left BackBtn__icon"></i> Back</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="slide__form-group slide__form-group--2">
+                            <input type="text" placeholder="Enter your XLM address" class="form-input input" autocomplete="off" value="">
+                            <div class="input-cta">
+                                <div class="input-cta__box">
+                                    <input type="text" placeholder="Enter MEMO (optional)" class="form-input input-cta__input" autocomplete="off" value="">
+                                    <div class="input-cta__btn">Generate</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button onClick="javascript:void(0)" class="btn next-button next--2">Next</button>
+                            </div>
+                        </div>
+                        <div class="form-hint">
+                            <p class="form-hint__text">Enter your XLM address</p>
+                            <p class="form-hint__text">Enter your optional memo (exchange address always require a memo</p>
+                            <p class="form-hint__text">Click NEXT button to generate deposite/narration reference (10-digit number)</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display:none" class="slide slide--3 ">
+                    <div class="row">
+                        <div class="slide-nav">
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/amount-icon-blue.png" alt="Amounts icon">
+                                <p class="slide-nav__icon-text">Amounts</p>
+                            </div>
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/wallet-icon-blue.png" alt="Wallet Details icon">
+                                <p class="slide-nav__icon-text">Wallet Details</p>
+                            </div>
+                            <div class="slide-nav__icon-box slide-nav__icon-box--active">
+                                <img class="slide-nav__icon" src="assets/img/exchange-icon-blue.png" alt="Exchange icon">
+                                <p class="slide-nav__icon-text">Exchange</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="BackBtn">
+                            <a onClick="javascript:void(0)" class="BackBtn__text back_btn--3" href="#">
+                                <i class="ion-chevron-left BackBtn__icon"></i> Back</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h4 class="slide__text">Check that all details are correct before processing</h4>
+                    </div>
+                    <div class="row">
+                        <div class="trans-details__text">
+                            <p>You are spending:</p>
+                        </div>
+                        <div class="trans-details__text--big">
+                            <p>100 XLM</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="trans-details__text">
+                            <p>You will receive:</p>
+                        </div>
+                        <div class="trans-details__text--big">
+                            <p>12,300 NGN</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="trans-details__text">
+                            <p>Your wallet address:</p>
+                        </div>
+                        <div class="trans-details__text--big">
+                            <p>0x234fsdjkb89745n24878932ndfu2939hfwe7344443q4jb</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="conversion-rate__list conversion-rate__list--white">
+                            <li class="conversion-rate__item">Rate: 1 XLM = 123 NGN</li>
+                            <li class="conversion-rate__item">Transfer Fee: NGN 1,000</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="slide__form-group slide__form-group--3">
+                            <div class="input-cta">
+                                <label for="Deposite/Narration Reference" class="input-cta__label">Deposite/Narration Reference</label>
+                                <div class="input-cta__box">
+                                    <input type="text" class="input-cta__input" autocomplete="off" disabled="" value="0000001349545683432">
+                                    <div class="input-cta__btn">Copy</div>
+                                </div>
+                            </div>
+                            <div class="bank-details">
+                                <p class="bank-details__heading">Bank Details:</p>
+                                <p class="bank-details__text">Bank:
+                                    <span class="bank-details__text--big">GTBank</span>
+                                </p>
+                                <p class="bank-details__text">Account Name:
+                                    <span class="bank-details__text--big">Cowrie Integrated Systems Limited</span>
+                                </p>
+                                <p class="bank-details__text">Account Number:
+                                    <span class="bank-details__text--big">0174408645</span>
+                                </p>
+                                <p class="bank-details__text">Narration/Description:
+                                    <span class="bank-details__text--big">10-digit deposite reference</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-hint">
+                            <p class="form-hint__text">Copy the 10-digit) deposite reference</p>
+                            <p class="form-hint__text">Launch your internet/mobile banking, make a transfer</p>
+                            <p class="form-hint__text">Your XLM wallet will be credited within a few minutes (E.T.A 5 minutes)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="row">
+            <div class="footer__box">
+                <p class="footer__text">© 2018 Cowrie Integrated Systems. All rights reserved.</p>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">About</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">FAQ</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">API</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">TOS</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">KYC/AML</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

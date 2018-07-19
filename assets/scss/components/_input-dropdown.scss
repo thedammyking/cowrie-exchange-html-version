@@ -1,0 +1,63 @@
+.input-dropdown {
+  &__label {
+    font-size: 1.5rem;
+  }
+
+  &__icon {
+    font-weight: 100;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+  }
+
+  &__box {
+    width: 39rem;
+    height: 4.7rem;
+    display: flex;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+
+    // @include respond(tab-port) {
+    //   width: 35rem;
+    // }
+
+    @include respond(phone) {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__dropdown {
+    width: 30%;
+    background-color: #2a1c4a;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+      padding: 0.9rem 1rem;
+    }
+
+    @include respond(tab-land) {
+      padding: 1.2rem 1rem;
+    }
+
+    @include respond(big-desktop) {
+      padding: 1.2rem 1rem;
+    }
+  }
+
+  &__input {
+    width: 70%;
+    border: 0;
+    outline: 0;
+    background-color: #3a3a44;
+    color: #f1f1f1;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0.5rem 1.5rem;
+  }
+}

@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background: #000000;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body {
+  background: #000000;
+}
+.adjustfooter + .footer {
+  position: relative;
+}

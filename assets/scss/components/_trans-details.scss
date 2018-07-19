@@ -1,0 +1,19 @@
+.trans-details {
+  &__text {
+    font-size: 1.2rem;
+    color: #6825ff;
+    width: 14rem;
+
+    &--big {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #f1f1f1;
+      margin-top: -0.4rem;
+
+      @include respond(phone) {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

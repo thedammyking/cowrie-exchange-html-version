@@ -1,0 +1,20 @@
+{
+  "name": "cowrie-exchange",
+  "version": "1.0.0",
+  "description":
+    "The Fastest Way to trade Cryptocurrency with Naira at the best rate",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "sass": "node-sass assets/scss/main.scss assets/css/style.css -w",
+    "start":
+      "parallelshell \"npm run sass && npm run sass -- -w\" \"npm run serve\""
+  },
+  "author": "Oluwadamilola Babalola",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.8.3",
+    "parallelshell": "^3.0.2"
+  }
+}

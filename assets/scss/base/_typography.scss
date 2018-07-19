@@ -1,0 +1,97 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    //<1200px
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+  }
+  @include respond(tab-port) {
+    //< 900px
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+  @include respond(phone) {
+    //< 900px
+    font-size: 43.75%; // 1rem = 7px, 7/16 = 43.75%
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px, 12/16 = 75%
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  font-size: 1.6rem;
+
+  &__nav-item {
+    &:last-child {
+      color: #6825ff;
+    }
+  }
+}
+
+.footer {
+  font-size: 1.3rem;
+  color: #f1f1f1;
+}
+
+.cta {
+  &__btn {
+    &-text {
+      font-size: 1.6rem;
+      font-weight: 200;
+
+      &--pupple {
+        font-weight: 300;
+        color: rgb(104, 37, 255);
+      }
+    }
+
+    &-text ~ p {
+      font-size: 3.2rem;
+      font-weight: 300;
+
+      @include respond(phone) {
+        font-size: 3.6rem;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 4.8rem;
+    font-weight: 100;
+    width: 85%;
+  }
+
+  &__text-bold {
+    margin-left: 1.1rem;
+  }
+}
+
+.spot-light {
+  &__card {
+    text-align: center;
+
+    &-text {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: #f1f1f1;
+    }
+  }
+}
+
+.partners {
+  &__heading {
+    font-size: 3rem;
+    font-weight: 100;
+    color: #363636;
+  }
+}
